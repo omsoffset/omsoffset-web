@@ -26,10 +26,8 @@ function saveFormData(e) {
     })
     .then(response => {
       console.log(response)
-      response = JSON.parse(response);
       if (response.ok) {
-        console.log(response.message);
-        alert(response.message + ' we will contact you shortly.')
+        alert('your response saved, we will contact you shortly.')
         contactForm.reset()
       } else {
         console.error('Failed to save form data:', response.statusText);
