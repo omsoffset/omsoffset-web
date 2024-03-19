@@ -25,6 +25,7 @@ function saveFormData(e) {
       body: JSON.stringify(formData),
     })
     .then(response => {
+      response = JSON.parse(response);
       if (response.status == "success") {
         console.log(response.message);
         alert(response.message + ' we will contact you shortly.')
