@@ -3,6 +3,12 @@ body {
   color: #0c0c0c;
   background-color: #ffffff;
 }
+.whatsapp_logo {
+  position: fixed;  /* Fix the button to the viewport */
+  bottom: 20px;     /* Set distance from bottom edge */
+  right: 15px;      /* Set distance from right edge */
+  z-index: 10000;
+}
 
 .layout_padding {
   padding-top: 90px;
