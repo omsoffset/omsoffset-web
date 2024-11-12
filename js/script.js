@@ -14,8 +14,9 @@ function saveFormData(e) {
   
     fetch('https://script.google.com/macros/s/AKfycbw587yzwv8f2GBtPgv_KbaaE_B4A0RcZL_jrsjY0OqexrBEqgokL5CnAlAgZmWNjnm7LQ/exec', {
       method: 'POST',
+      redirect: "follow",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "text/plain;charset=utf-8",
       },
       body: JSON.stringify(formData),
     })
